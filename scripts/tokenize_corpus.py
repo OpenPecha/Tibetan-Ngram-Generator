@@ -39,7 +39,7 @@ def tokenize_sents(tokens: str) ->  str:
 
         sent_tokens.append(token)
 
-    if sent_str:
+    if sent_tokens:
         sent_str = " ".join(sent_tokens)
         sents_str += sent_str + "\n"
 
@@ -60,7 +60,7 @@ def tokenize_corpus(path, replace=False):
 
 def main():
     for corpus_path in CORPUS_DIR.iterdir():
-        tokenize_corpus(corpus_path)
+        tokenize_corpus(corpus_path, replace=True)
 
 
 if __name__ == "__main__":

@@ -19,7 +19,7 @@
 
 ## Description
 
-Scripts for generating ngrams
+Script to generate Tibetan N-grams, Skip-grams and Flex-grams using Colibri
 <!-- This section provides a high-level overview for the repo -->
 
 ## Owner
